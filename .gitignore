@@ -1,0 +1,7 @@
+.env
+.env.*
+node_modules
+AGENTS.md
+
+# Next.js
+.next/
