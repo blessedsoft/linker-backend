@@ -7,14 +7,14 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   app.setGlobalPrefix("api");
-
+// Enable CORS for the frontend application
   app.enableCors({
     origin: process.env.FRONTEND_ORIGIN || "http://localhost:3000",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
     allowedHeaders: "Content-Type, Authorization",
   });
 
-  const port = process.env.PORT || 3000;
+  const port = process.env.PORT || 3001;
   await app.listen(port);
   Logger.log(`Backend running on http://localhost:${port}/api`, "Bootstrap");
 }
