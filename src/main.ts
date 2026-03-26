@@ -14,7 +14,7 @@ async function bootstrap() {
     allowedHeaders: "Content-Type, Authorization",
   });
 
-  const port = process.env.PORT || 3001;
+  const port = process.env.PORT || 3000;
   await app.listen(port);
   Logger.log(`Backend running on http://localhost:${port}/api`, "Bootstrap");
 }
