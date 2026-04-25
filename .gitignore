@@ -5,3 +5,5 @@ AGENTS.md
 
 # Next.js
 .next/
+
+/k8s-backend/secrets.yaml
